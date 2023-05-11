@@ -1,0 +1,9 @@
+aside.sidebar {
+  background-color: var(--sidebar-color);
+  color: var(--sidebar-text-color);
+  height: 100%;
+  padding: 20px 10px;
+  width: 250px;
+  min-height: 100vh;
+}
+
