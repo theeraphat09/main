@@ -9,7 +9,7 @@ export default function Jobs() {
     fetchJobs();
   }, []);
   const fetchJobs = async () => {
-    const response = await fetch("http://localhost:3333/jobs", {
+    const response = await fetch("https://good-teal-seahorse-suit.cyclic.app/jobs", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -37,7 +37,7 @@ export default function Jobs() {
     },
   ];
   const onRemove = async (id) => {
-    fetch(`http://localhost:3333/jobs/${id}`, {
+    fetch(`https://good-teal-seahorse-suit.cyclic.app/jobs/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
