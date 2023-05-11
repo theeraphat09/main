@@ -9,9 +9,12 @@ import {
 import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
+
+
 export default function JobForm() {
   const navigate = useNavigate();
   const { id } = useParams();
+
   const [values, setValues] = useState({
     name: "",
     description: "",
@@ -47,7 +50,7 @@ export default function JobForm() {
       .then((res) => {
         alert(res.message);
         if (!id) {
-          navigate(`/admin/jobs/edit/${res.result.insertId}`);
+          navigate(`/jobs/edit/${res.result.insertId}`);
         }
       });
   };

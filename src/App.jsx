@@ -7,7 +7,7 @@ import JobForm from "./pages/Jobs/JobForm";
 export default function App() {
   const theme = createTheme();
   const router = createBrowserRouter([
-  
+    
     {
       path: "/",
       element: <AdminLayout />,
